@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/adminStyle.css" type="text/css">
+    <title>UXEPRESS ADMIN</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div class="overlay" style="display: none;">
+        <div class="login-wrapper">
+            <div class="login-content">
+                <img src="img/Shape.png" class="close" alt="close">
+                <div class="login-content__text">
+                    <h3 class="text login-content__h3">Авторизация</h3>
+                    <span class="text login-content__span">Введите логин и пароль, чтобы войти в личный кабинет</span>
+                </div>
+                <div class="login-content__form">
+                    <form method="post" action="">
+                        <input class="text login-content__input" type="email" name="username" id="username" placeholder="Логин" required="required" />
+                        <input class="text login-content__input" type="password" name="password" id="password" placeholder="Пароль" required="required" />
+                        <button class="text login-content__button" type="submit">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top">
+        <header class="header">
+            <div class="header__logo-div">
+                <div class="logo">
+                    <img src="img/logo-raket.svg" class="logo__img" alt="logo">
+                    <img src="img/main-logo.svg" class="logo__name" alt="logo-name">
+                </div>
+                <div class="line">
+                    <div class="line__elem"></div>
+                </div>
+                <div class="text header__text">
+                    <p>Курьерская служба доставки</p>
+                </div>
+            </div>
+            <div class="header__phone-div">
+                <div class="phone">
+                    <img src="img/phone.svg" class="phone__img" alt="phone">
+                    <p class="text phone__text">8 (909) 023-12-51</p>
+                </div>
+                <div id="enter" class="header__button">
+                    <button class="button text header__button-elem">Вход</button>
+                </div>
+            </div>
+        </header>
+    </div>
+        <div class="main">
+            <div class="main__content">
+                <div class="main__text">
+                    <h1 class="text main__h1">Добавить новость</h1>
+                    <p class="text main__p">Введите текст новости, а также приложите изображение (размер: 270х270px)</p>
+                </div>
+                <div class="main__form">
+                    <form id="formAdd" method="post" action="">
+                        <textarea class="text main__textarea" id="text" placeholder="Введите текст новости" maxlength="150" name="text" required="required"></textarea>
+                        <h6 class="text main__countChars" id="counter"></h6>
+                        <div class="main__add-image">
+                            <div class="add">
+                                <img class="main__img" src="img/Photo.png" alt="">
+                                <label class="text main__add-label" for="addImg">+ Добавить изображение</label>
+                                <input class="main__add-input" id="addImg" type="file"  required="required"
+                                                  name="addImg" accept=".png, .jpg,. jpeg">
+                            </div>
+                            <div class="preview">
+
+                            </div>
+                            <img src="img/remove-Round.png" alt="remove" id="removeImg">`
+                        </div>
+                        <button class="text main__button" type="submit">Применить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="content">
+                <div class="content__logo">
+                    <img src="img/logo-raket.svg" class="logo__img" alt="logo">
+                    <img src="img/main-logo.svg" class="logo__name" alt="logo-name">
+                </div>
+                <div class="footer__text">
+                    <div class="links">
+                        <div class="text list">
+                            <a class="list__link" href="">О компании</a>
+                            <a class="list__link" href="">Вакансии</a>
+                            <a class="list__link" href="">Клиенту</a>
+                            <a class="list__link" href="">Франчайзинг</a>
+                        </div>
+                        <div class="text list">
+                            <a class="list__link" href="">Доставка из Китая</a>
+                            <a class="list__link" href="">Все услуги</a>
+                            <a class="list__link" href="">Акции</a>
+                        </div>
+                    </div>
+                    <div class="text list contacts">
+                        <span class="list__text">manager@uexpress.ru</span>
+                        <span class="list__text">115221, г. Челябинск, ул. Северная, д. 29-в</span>
+                        <span class="list__text">Мы работаем по 24 часа 5 дней в неделю</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/adminScript.js"></script>
+</body>
+</html>

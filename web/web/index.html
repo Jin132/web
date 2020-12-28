@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <title>UXEPRESS</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body class="body">
+    <div class="overlay" style="display: none;">
+        <div class="login-wrapper">
+            <div class="login-content">
+                <img src="img/Shape.png" class="close" alt="close">
+                <div class="login-content__text">
+                    <h3 class="text login-content__h3">Авторизация</h3>
+                    <span class="text login-content__span">Введите логин и пароль, чтобы войти в личный кабинет</span>
+                </div>
+                <div class="login-content__form">
+                    <form method="post" action="">
+                        <input class="text login-content__input" type="email" name="username" id="username" placeholder="Логин" required="required" />
+                        <input class="text login-content__input" type="password" name="password" id="password" placeholder="Пароль" required="required" />
+                        <button class="text login-content__button" type="submit">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top">
+        <header class="header">
+            <div class="header__logo-div">
+                <div class="logo">
+                    <img src="img/logo-raket.svg" class="logo__img" alt="logo">
+                    <img src="img/main-logo.svg" class="logo__name" alt="logo-name">
+                </div>
+                <div class="line">
+                    <div class="line__elem"></div>
+                </div>
+                <div class="text header__text">
+                    <p>Курьерская служба доставки</p>
+                </div>
+            </div>
+            <div class="header__phone-div">
+                <div class="phone">
+                    <img src="img/phone.svg" class="phone__img" alt="phone">
+                    <p class="text phone__text">8 (909) 023-12-51</p>
+                </div>
+                <div id="enter" class="header__button">
+                    <button class="button text header__button-elem">Вход</button>
+                </div>
+            </div>
+        </header>
+        <div class="slider">
+            <div class="slide1" id="ss">
+                <div class="slider__text">
+                    <h1 class="text slider__h1">Срочная доставка день в день</h1>
+                    <p class="text slider__p">Для тех, кто не может ждать у нас есть услуга срочной курьерской доставки корреспондеции и других видов отправлений.</p>
+                    <button class="text slider__button">Заказать доставку</button>
+                </div>
+                <div class="slider__image">
+                    <img src="img/car.png" alt="delivery"/>
+                </div>
+            </div>
+            <div class="slide2 invisible">
+                <div class="slider__text">
+                    <h1 class="text slider__h1">Подписание договора за 1 час</h1>
+                    <p class="text slider__p">В течение часа наш курьер заберет вашу посылку и подпишет с Вами договор о предоставлении услуг.</p>
+                    <button class="text slider__button">Заказать доставку</button>
+                </div>
+                <div class="slider__image2">
+                    <img src="img/table.png" alt="delivery"/>
+                </div>
+            </div>
+            <div class="dots">
+                <div class="dots__dot">
+                    <div class="dots__dot-active dot1"></div>
+                </div>
+                <div class="dots__dot">
+                    <div class="dots__dot-active invisible dot2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <h1 class="text main__head">5 шагов к заявке</h1>
+        <div class="blocks">
+            <div class="block">
+                <img src="img/block-img/cost.png" class="block__image">
+                <span class="text block__span">Расчитать стоимость</span>
+                <p class="text block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.</p>
+            </div>
+            <div class="block">
+                <img src="img/block-img/delivery.png" class="block__image">
+                <span class="text block__span">Вызвать курьера</span>
+                <p class="text block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.</p>
+            </div>
+            <div class="block">
+                <img src="img/block-img/pay.png" class="block__image">
+                <span class="text block__span">Оплатить услуги</span>
+                <p class="text block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.</p>
+            </div>
+            <div class="block">
+                <img src="img/block-img/contract.png" class="block__image">
+                <span class="text block__span">Заключить договор</span>
+                <p class="text block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.</p>
+            </div>
+            <div class="block">
+                <img src="img/block-img/data.png" class="block__image">
+                <span class="text block__span">Предоставить данные</span>
+                <p class="text block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elitsequi nesciunt.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="content">
+            <div class="content__logo">
+                <img src="img/logo-raket.svg" class="logo__img" alt="logo">
+                <img src="img/main-logo.svg" class="logo__name" alt="logo-name">
+            </div>
+            <div class="footer__text">
+                <div class="links">
+                    <div class="text list">
+                        <a class="list__link" href="">О компании</a>
+                        <a class="list__link" href="">Вакансии</a>
+                        <a class="list__link" href="">Клиенту</a>
+                        <a class="list__link" href="">Франчайзинг</a>
+                    </div>
+                    <div class="text list">
+                        <a class="list__link" href="">Доставка из Китая</a>
+                        <a class="list__link" href="">Все услуги</a>
+                        <a class="list__link" href="">Акции</a>
+                    </div>
+                </div>
+                <div class="text list contacts">
+                    <span class="list__text">manager@uexpress.ru</span>
+                    <span class="list__text">115221, г. Челябинск, ул. Северная, д. 29-в</span>
+                    <span class="list__text">Мы работаем по 24 часа 5 дней в неделю</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
